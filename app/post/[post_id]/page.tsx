@@ -7,6 +7,7 @@ export default async function PostPage({ params }: { params: Promise<{ post_id: 
   const postId = Number(resolvedParams.post_id);
 
   if (isNaN(postId)) {
+    console.log('Nannnn')
     notFound();
   }
 
